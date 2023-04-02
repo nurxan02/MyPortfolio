@@ -834,31 +834,39 @@
                       <br />
                     </p>
                   </div>
-
+                  <!-- action="https://formspree.io/f/xdovwewv" -->
                   <div class="one-half width-55 last">
                     <div class="contact-form">
-                      <form
-                        action="https://formspree.io/f/xdovwewv"
-                        method="POST"
-                      >
+                      <form action="" id="portfolioMain">
                         <label class="form-label-own" id="formName">
                           Your Name:
                         </label>
-                        <input required type="text" name="name" />
+                        <input required type="text" id="nameForm" name="name" />
                         <label class="form-label-own" id="formSurname">
                           Your Surname:
                         </label>
-                        <input type="text" required name="surname" />
+                        <input
+                          type="text"
+                          required
+                          id="surnameForm"
+                          name="surname"
+                        />
                         <label class="form-label-own" id="formEmail">
                           Your email:
                         </label>
-                        <input required type="email" name="email" />
+                        <input
+                          required
+                          type="email"
+                          id="emailForm"
+                          name="email"
+                        />
                         <label class="form-label-own" id="formMessage">
                           Your message:
                         </label>
                         <textarea
                           style="resize: none; overflow: scroll"
                           name="message"
+                          id="messageForm"
                         ></textarea>
 
                         <button type="submit" class="buttonForm" id="formSend">
@@ -879,6 +887,7 @@
       </div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
     <script src="js/jquery.js"></script>
     <script src="js/imagesloaded.pkgd.js"></script>
     <script src="js/jquery.prettyPhoto.js"></script>
@@ -886,6 +895,7 @@
     <script src="js/jquery.smartmenus.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/circle-progress.min.js"></script>
+    <script src="js/firebase.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
