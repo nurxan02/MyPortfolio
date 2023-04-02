@@ -1869,3 +1869,18 @@ p.contact-submit-holder {
     margin-bottom: 20px;
   }
 }
+
+.alert {
+  width: 100%;
+  background: rgb(8, 199, 53);
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  transition: 0.3s;
+  opacity: 0%;
+  visibility: hidden;
+  position: absolute;
+  font-style: italic;
+}

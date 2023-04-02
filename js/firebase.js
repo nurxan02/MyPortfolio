@@ -22,18 +22,18 @@ function submitForm(e) {
   var email = document.querySelector("#emailForm").value;
   var message = document.querySelector("#messageForm").value;
 
-  console.log(name, surname, email, message);
+  //   console.log(name, surname, email, message);
   saveMessages(name, surname, email, message);
 
   //   enable alert
-  //   document.querySelector(".alert").style.display = "block";
+  document.querySelector(".alert").style.visibility = "visible";
+  document.querySelector(".alert").style.opacity = "90%";
 
-  //   //   remove the alert
-  //   setTimeout(() => {
-  //     // document.querySelector(".alert").style.display = "none";
-  //   }, 3000);
-
-  //   reset the form
+  //   remove the alert
+  setTimeout(() => {
+    document.querySelector(".alert").style.opacity = "0%";
+    document.querySelector(".alert").style.visibility = "hidden";
+  }, 3000);
   document.getElementById("portfolioMain").reset();
 }
 

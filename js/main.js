@@ -463,6 +463,7 @@
     $(".az").click(function () {
       $("#name").text("AD");
       $("#nameBig").text("Nurxan");
+      $("#sentMessage").text("Mesajınız uğurla göndərildi!");
 
       $("#surnameBig").text("Məsimzadə");
 
@@ -562,6 +563,7 @@
       $("#name").text("NAME");
       $("#nameBig").text("Nurkhan");
       $("#surnameBig").text("Masimzade");
+      $("#sentMessage").text("Your message successfully sent!");
 
       $("#nameVal").text("Nurkhan Masimzade");
       $("#profession").text("ROLE");
@@ -660,6 +662,8 @@
       $("#nameBig").text("Nurkhan");
       $("#surnameBig").text("Masimzade");
 
+      $("#sentMessage").text("Twoja wiadomość została pomyślnie wysłana!");
+
       $("#nameVal").text("Nurkhan Masimzade");
       $("#profession").text("ROLA");
       $("#professionVal").text("Programista stron internetowych");
@@ -757,6 +761,7 @@
       $("#name").text("ИМЯ");
       $("#nameBig").text("Нурхан");
       $("#surnameBig").text("Масимзаде");
+      $("#sentMessage").text("Ваше сообщение успешно отправлено!");
 
       $("#nameVal").text("Масимзаде Нурхан");
       $("#profession").text("ПРОФЕССИЯ");
