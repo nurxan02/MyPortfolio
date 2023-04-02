@@ -22,7 +22,7 @@
 /* ===================================
     1. 3rd Part CSS Libraries
 ====================================== */
-@import url("/node_modules/bootstrap-icons/font/bootstrap-icons.css");
+@import url("node_modules/bootstrap-icons/font/bootstrap-icons.css");
 @import url("css/clear.css");
 @import url("css/sm-clean.css");
 @import url("css/owl.carousel.min.css");
