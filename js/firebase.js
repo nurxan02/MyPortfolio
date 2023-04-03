@@ -54,7 +54,7 @@ portfolioDB.on("value", function (snapshot) {
     const message = data.message;
     if (message.length >= 50) {
       const slide = document.createElement("div");
-      slide.innerHTML = `<h6>${name} ${surname}</h6><p>${message}</p>`;
+      slide.innerHTML = `<h6>${name} ${surname}</h6><p>" ${message} "</p>`;
       $(".FAQ").slick("slickAdd", slide);
     }
   });
