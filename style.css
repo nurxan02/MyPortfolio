@@ -1688,12 +1688,25 @@ p.contact-submit-holder {
 }
 
 @media screen and (max-height: 880px) {
+  .cursor {
+    display: none;
+  }
   .big-num {
     display: none;
   }
 }
 
 @media screen and (max-width: 767px) {
+  #messageList h6 {
+    font-size: 18px !important;
+  }
+  #messageList p {
+    font-size: 13px !important;
+    line-height: 110%;
+  }
+  .cursor {
+    display: none !important;
+  }
   .surname {
     color: #eccfff;
     -webkit-text-stroke: 2px #d089ff;
@@ -1871,6 +1884,7 @@ p.contact-submit-holder {
   }
 }
 
+/* Right Section */
 #rights {
   width: 100%;
   text-align: center;
@@ -1886,6 +1900,7 @@ p.contact-submit-holder {
 .rightsSec {
   padding: 60px 0px 0px 0px !important;
 }
+/* Contact get in touch alert  */
 .alert {
   width: 100%;
   background: rgb(8, 199, 53);
@@ -1900,6 +1915,7 @@ p.contact-submit-holder {
   position: absolute;
   font-style: italic;
 }
+/* FAQ section */
 .FAQ h6 {
   text-align: center;
   transition: 0.3s;
