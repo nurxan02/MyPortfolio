@@ -1698,14 +1698,18 @@ p.contact-submit-holder {
 
 @media screen and (max-width: 767px) {
   #messageList h6 {
-    font-size: 18px !important;
-    margin-bottom: -20px;
+    font-size: 20px !important;
+    font-style: italic;
+    margin-bottom: -14px;
   }
   #messageList p {
     font-size: 13px !important;
     line-height: 110%;
+    font-style: italic;
   }
-
+  .faqsec {
+    padding-bottom: 0px !important;
+  }
   .cursor {
     display: none !important;
   }
