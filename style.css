@@ -1924,10 +1924,13 @@ p.contact-submit-holder {
 /* FAQ section */
 .FAQ h6 {
   text-align: center;
+  font-style: italic;
   transition: 0.3s;
 }
 .FAQ p {
   text-align: center;
+  font-style: italic;
+
   transition: 0.3s;
 }
 
