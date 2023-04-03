@@ -1930,15 +1930,6 @@ p.contact-submit-holder {
 .FAQ p {
   text-align: center;
   font-style: italic;
-
-  transition: 0.3s;
-}
-
-.FAQ h6:hover {
-  color: whitesmoke;
-}
-.FAQ p:hover {
-  color: white;
 }
 
 /* Cursor effect */
