@@ -22,14 +22,10 @@ function submitForm(e) {
   var email = document.querySelector("#emailForm").value;
   var message = document.querySelector("#messageForm").value;
 
-  //   console.log(name, surname, email, message);
   saveMessages(name, surname, email, message);
-
-  //   enable alert
   document.querySelector(".alert").style.visibility = "visible";
   document.querySelector(".alert").style.opacity = "90%";
 
-  //   remove the alert
   setTimeout(() => {
     document.querySelector(".alert").style.opacity = "0%";
     document.querySelector(".alert").style.visibility = "hidden";
@@ -47,3 +43,19 @@ const saveMessages = (name, surname, email, message) => {
     email: email,
   });
 };
+
+const messageList = document.querySelector("#messageList");
+
+portfolioDB.on("value", function (snapshot) {
+  snapshot.forEach(function (childSnapshot) {
+    const data = childSnapshot.val();
+    const name = data.name;
+    const surname = data.surname;
+    const message = data.message;
+    if (message.length >= 50) {
+      const slide = document.createElement("div");
+      slide.innerHTML = `<h6>${name} ${surname}</h6><p>${message}</p>`;
+      $(".FAQ").slick("slickAdd", slide);
+    }
+  });
+});
