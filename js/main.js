@@ -1,11 +1,11 @@
 (function ($) {
   "use stict";
-  document.addEventListener("contextmenu", (e) => {
-    e.preventDefault();
-  });
-  document.addEventListener("copy", (e) => {
-    e.preventDefault();
-  });
+  // document.addEventListener("contextmenu", (e) => {
+  //   e.preventDefault();
+  // });
+  // document.addEventListener("copy", (e) => {
+  //   e.preventDefault();
+  // });
   var position = $(window).scrollTop();
 
   stopAnimateOnScroll();
