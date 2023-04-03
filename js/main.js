@@ -453,9 +453,6 @@
           },
         });
       }
-      //   else {
-      //     alert("Message was sent!");
-      //   }
     });
   }
 
@@ -554,7 +551,7 @@
       $("#addresses").text("ADRES:");
       $("#website").text("VEB SƏHİFƏ:");
       $("#rights").html(
-        "© Bütün hüquqları <b>Nurkhan Masimzade</b> tərəfindən qorunur"
+        '© Bütün hüquqları <a href="http://bio.link/nurxanmasimzade"><b>Nurkhan Masimzade</b></a> tərəfindən qorunur'
       );
     });
   }
@@ -653,7 +650,9 @@
 
       $("#addresses").text("ADDRESS:");
       $("#website").text("WEBSITE:");
-      $("#rights").html("© All Rights Reserved by <b>Nurkhan Masimzade</b>");
+      $("#rights").html(
+        '© All Rights Reserved by <a href="http://bio.link/nurxanmasimzade"><b>Nurkhan Masimzade</b></a>'
+      );
     });
   }
   function changeLangPl() {
@@ -752,7 +751,7 @@
       $("#addresses").text("ADRES:");
       $("#website").text("STRONA INTERNETOWA:");
       $("#rights").html(
-        "© Wszelkie prawa zastrzeżone przez <b>Nurkhan Masimzade</b>"
+        '© Wszelkie prawa zastrzeżone przez <a href="http://bio.link/nurxanmasimzade"><b>Nurkhan Masimzade</b></a>'
       );
     });
   }
@@ -851,7 +850,9 @@
 
       $("#addresses").text("АДРЕС:");
       $("#website").text("ВЕБ-САЙТ:");
-      $("#rights").html("© Все права принадлежат <b>Нурхану Масимзаде</b>");
+      $("#rights").html(
+        '© Все права принадлежат <a href="http://bio.link/nurxanmasimzade"><b>Нурхану Масимзаде</b></a>'
+      );
     });
   }
   const cursor = document.querySelector(".cursor");
