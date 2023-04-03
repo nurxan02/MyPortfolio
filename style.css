@@ -73,7 +73,6 @@
 ::before {
   box-sizing: border-box;
   cursor: crosshair;
-  pointer-events: none;
 }
 
 body {
