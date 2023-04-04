@@ -553,6 +553,7 @@
       $("#rights").html(
         '© Bütün hüquqları <a href="http://bio.link/nurxanmasimzade"><b>Nurkhan Masimzade</b></a> tərəfindən qorunur'
       );
+      $("#question").text("Tez-tez verilən suallar ?");
     });
   }
   function changeLangEn() {
@@ -653,6 +654,7 @@
       $("#rights").html(
         '© All Rights Reserved by <a href="http://bio.link/nurxanmasimzade"><b>Nurkhan Masimzade</b></a>'
       );
+      $("#question").text("Frequently asked questions ?");
     });
   }
   function changeLangPl() {
@@ -753,6 +755,7 @@
       $("#rights").html(
         '© Wszelkie prawa zastrzeżone przez <a href="http://bio.link/nurxanmasimzade"><b>Nurkhan Masimzade</b></a>'
       );
+      $("#question").text("Często Zadawane Pytania ?");
     });
   }
   function changeLangRu() {
@@ -853,6 +856,7 @@
       $("#rights").html(
         '© Все права принадлежат <a href="http://bio.link/nurxanmasimzade"><b>Нурхану Масимзаде</b></a>'
       );
+      $("#question").text("Часто задаваемые вопросы ?");
     });
   }
   const cursor = document.querySelector(".cursor");
