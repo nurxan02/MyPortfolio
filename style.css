@@ -62,6 +62,14 @@
   border: 2px solid #c4fff5;
   background-color: #c4fff5;
   color: #207667;
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
 }
 
 ::selection {
@@ -650,13 +658,43 @@ h1.entry-title {
   width: 47%;
   margin-right: 6%;
   margin-bottom: 6%;
-  transition: transform 0.3s, box-shadow 0.2s;
+  transition: 0.3s;
 }
 .service-holder:hover {
   transform: scale(1.05);
-  box-shadow: 0px 0px 200px -70px black;
+  box-shadow: 0px 0px 200px -50px #000000;
 }
 
+.service-holder:hover > .service-text {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
+}
+.service-holder:hover > .service-title {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
+}
+.service-holder:hover > .service-image {
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
+}
 .service-holder img {
   width: 80px;
   margin-bottom: 30px;
@@ -1278,6 +1316,14 @@ p.skill-circle-text {
 .mayil:hover {
   transform: scale(1.02);
   color: #eccfff !important;
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
 }
 
 .skill {
@@ -1336,6 +1382,14 @@ p.skill-circle-text {
   color: #27bfa6;
   box-shadow: 0px 0px 20px -10px #eccfff;
   transform: scale(1.03);
+  -webkit-mask-image: linear-gradient(
+    -75deg,
+    rgba(0, 0, 0, 0.6) 30%,
+    #000 50%,
+    rgba(0, 0, 0, 0.6) 70%
+  );
+  -webkit-mask-size: 200%;
+  animation: shine 1s infinite;
 }
 .contact-form {
   padding: 65px;
@@ -1977,5 +2031,14 @@ p.contact-submit-holder {
     background-color: #eccfff;
 
     transform: translate(-50%, -50%) scale(5);
+  }
+}
+@-webkit-keyframes shine {
+  from {
+    -webkit-mask-position: 150%;
+  }
+
+  to {
+    -webkit-mask-position: -20%;
   }
 }
