@@ -47,6 +47,9 @@
 
   cursor: pointer;
 }
+.lang-skill-res {
+  display: none;
+}
 .languages {
   display: flex;
 }
@@ -1508,6 +1511,17 @@ p.contact-submit-holder {
   text-align: center;
 }
 
+.mainDiv {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+.mainDiv div {
+  width: 10%;
+  background-color: #56ccb8;
+  height: 2px;
+}
 /* ===================================
     11. Responsive CSS
 ====================================== */
@@ -1751,6 +1765,13 @@ p.contact-submit-holder {
 }
 
 @media screen and (max-width: 767px) {
+  .lang-skill {
+    display: none;
+  }
+  .lang-skill-res {
+    display: block;
+    margin-bottom: 40px;
+  }
   #messageList h6 {
     font-size: 20px !important;
     font-style: italic;
