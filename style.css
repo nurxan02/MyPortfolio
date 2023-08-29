@@ -33,6 +33,15 @@
 /* ===================================
     2. Global CSS
 ====================================== */
+#bmc-wbtn {
+  box-shadow: 0px 0px 15px -3px #00ffd5 !important;
+  transition: 0.2s !important;
+}
+#bmc-wbtn:hover {
+  transform: scale(1.2) !important;
+  box-shadow: 0px 0px 20px -3px #ff813f !important;
+  background-color: #ff813f !important;
+}
 .languages .lang {
   height: 40px;
   width: 40px;
