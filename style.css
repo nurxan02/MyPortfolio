@@ -37,9 +37,7 @@
   transition: 0.2s !important;
 }
 #bmc-wbtn:hover {
-  transform: scale(1.2) !important;
-  box-shadow: 0px 0px 20px -3px #ff813f !important;
-  background-color: #ff813f !important;
+  transform: scale(1.1) !important;
 }
 .languages .lang {
   height: 40px;
