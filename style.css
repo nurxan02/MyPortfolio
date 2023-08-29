@@ -34,7 +34,6 @@
     2. Global CSS
 ====================================== */
 #bmc-wbtn {
-  box-shadow: 0px 0px 15px -3px #00ffd5 !important;
   transition: 0.2s !important;
 }
 #bmc-wbtn:hover {
