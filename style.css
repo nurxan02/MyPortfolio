@@ -89,7 +89,7 @@
 ::after,
 ::before {
   box-sizing: border-box;
-  cursor: crosshair;
+  cursor: auto;
 }
 
 body {
@@ -1420,6 +1420,7 @@ p.skill-circle-text {
 }
 
 .contact-form input[type="text"],
+.contact-form input[type="tel"],
 .contact-form input[type="email"],
 .contact-form textarea {
   border: 0;
@@ -1473,6 +1474,7 @@ p.contact-submit-holder {
 }
 
 .contact-form input[type="text"]::-webkit-input-placeholder,
+.contact-form input[type="tel"]::-webkit-input-placeholder,
 .contact-form input[type="email"]::-webkit-input-placeholder,
 .contact-form textarea::-webkit-input-placeholder {
   font-family: "Poppins", sans-serif;
@@ -1480,10 +1482,11 @@ p.contact-submit-holder {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .contact-form input[type="text"]:-ms-input-placeholder,
+.contact-form input[type="tel"]:-ms-input-placeholder,
 .contact-form input[type="email"]:-ms-input-placeholder,
 .contact-form textarea:-ms-input-placeholder {
   font-family: "Poppins", sans-serif;
@@ -1491,10 +1494,11 @@ p.contact-submit-holder {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 .contact-form input[type="text"]::placeholder,
+.contact-form input[type="tel"]::placeholder,
 .contact-form input[type="email"]::placeholder,
 .contact-form textarea::placeholder {
   font-family: "Poppins", sans-serif;
@@ -1502,9 +1506,10 @@ p.contact-submit-holder {
   font-weight: 400;
   font-size: 14px;
   line-height: 25px;
-  opacity: 1;
+  opacity: 0.5;
 }
-
+#phone {
+}
 .rights {
   margin: 0;
   padding-bottom: 0 !important;
@@ -2014,17 +2019,21 @@ p.contact-submit-holder {
 }
 
 /* Cursor effect */
+
 .cursor {
-  z-index: 100;
+  z-index: 100000;
   position: absolute;
   top: 0;
   left: 0;
-  border: 2px solid #27bfa6;
+  border: 2px solid #d089ff;
   background-color: rgba(227, 197, 255, 0.367);
+  -webkit-box-shadow: 0px 0px 30px -10px #1faf96;
   box-shadow: 0px 0px 30px -10px #1faf96;
-  height: 50px;
-  width: 50px;
+  height: 40px;
+  width: 40px;
   border-radius: 50px;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   pointer-events: none;
 }
@@ -2034,28 +2043,50 @@ p.contact-submit-holder {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  background-color: #2cd0b5;
+  background-color: #d089ff;
   height: 20px;
   width: 20px;
   border-radius: 50px;
 }
 .cursor::before {
-  background-color: #2bcaaf;
+  background-color: #d089ff;
 }
 .cursor.click::before {
+  -webkit-animation: click 1s ease forwards;
   animation: click 1s ease forwards;
-  background-color: #2bcaaf;
+  background-color: #d089ff;
 }
-@keyframes click {
+@-webkit-keyframes click {
   0% {
     opacity: 1;
-    background-color: #eccfff;
+    background-color: #2bcaaf;
+    -webkit-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1);
   }
   100% {
     opacity: 0;
-    background-color: #eccfff;
+    background-color: #2bcaaf;
+
+    -webkit-transform: translate(-50%, -50%) scale(5);
+
+    transform: translate(-50%, -50%) scale(5);
+  }
+}
+@keyframes click {
+  0% {
+    opacity: 1;
+    background-color: #2bcaaf;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+  }
+  100% {
+    opacity: 0;
+    background-color: #2bcaaf;
+
+    -webkit-transform: translate(-50%, -50%) scale(5);
 
     transform: translate(-50%, -50%) scale(5);
   }
@@ -2069,3 +2100,4 @@ p.contact-submit-holder {
     -webkit-mask-position: -20%;
   }
 }
+/* custom cursor  */

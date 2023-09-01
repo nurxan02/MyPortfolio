@@ -547,6 +547,7 @@
       $("#formSurname").text("Soyadınız:");
       $("#formEmail").text("E-mail ünvanınız:");
       $("#formMessage").text("Mesajınız:");
+      $("#formTel").text("Telefon Nömrəniz:");
       $("#formSend").text("Göndər");
 
       $("#addresses").text("ADRES:");
@@ -650,6 +651,7 @@
       $("#formSurname").text("Your Surname:");
       $("#formEmail").text("Your email:");
       $("#formMessage").text("Your message:");
+      $("#formTel").text("Your Phone:");
       $("#formSend").text("Send");
 
       $("#addresses").text("ADDRESS:");
@@ -753,6 +755,7 @@
       $("#formSurname").text("Twoje nazwisko:");
       $("#formEmail").text("Twój email:");
       $("#formMessage").text("Twoja wiadomość:");
+      $("#formTel").text("Twój telefon:");
       $("#formSend").text("Wyślij");
 
       $("#addresses").text("ADRES:");
@@ -856,6 +859,8 @@
       $("#formSurname").text("Фамилия:");
       $("#formEmail").text("Электронная почта:");
       $("#formMessage").text("Сообщение:");
+      $("#formTel").text("Телефон:");
+
       $("#formSend").text("Отправить");
 
       $("#addresses").text("АДРЕС:");

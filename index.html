@@ -336,7 +336,7 @@
                       >
 
                       <a
-                        href="https://drive.google.com/uc?export=download&id=1_KO264qZRwmTV1TSjiy-5tSdBvd5k7W8"
+                        href="https://drive.google.com/uc?export=download&id=1Z72VVvh4AG2xQJmBAllFVq11D7Iz1G2U"
                         class="button"
                         id="cvDownload"
                         >Download CV</a
@@ -914,7 +914,13 @@
                         <label class="form-label-own" id="formName">
                           Your Name:
                         </label>
-                        <input required type="text" id="nameForm" name="name" />
+                        <input
+                          required
+                          type="text"
+                          id="nameForm"
+                          name="name"
+                          placeholder="Name"
+                        />
                         <label class="form-label-own" id="formSurname">
                           Your Surname:
                         </label>
@@ -923,6 +929,7 @@
                           required
                           id="surnameForm"
                           name="surname"
+                          placeholder="Surname"
                         />
                         <label class="form-label-own" id="formEmail">
                           Your email:
@@ -932,6 +939,18 @@
                           type="email"
                           id="emailForm"
                           name="email"
+                          placeholder="example@email.com"
+                        />
+                        <label class="form-label-own" id="formTel">
+                          Your Phone:
+                        </label>
+                        <input
+                          required
+                          type="tel"
+                          id="phoneForm"
+                          name="phone"
+                          pattern="^[0-9]{3,45}$"
+                          placeholder="+123 567 89 00"
                         />
                         <label class="form-label-own" id="formMessage">
                           Your message:
@@ -940,6 +959,7 @@
                           style="resize: none"
                           name="message"
                           id="messageForm"
+                          placeholder="Message..."
                         ></textarea>
                         <button type="submit" class="buttonForm" id="formSend">
                           Send
@@ -989,7 +1009,7 @@
         </div>
       </div>
     </div>
-    <div class="cursor sssssss"></div>
+    <!-- <div class="cursor sssssss"></div> -->
     <script
       data-name="BMC-Widget"
       data-cfasync="false"

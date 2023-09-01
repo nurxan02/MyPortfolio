@@ -21,8 +21,9 @@ function submitForm(e) {
   var surname = document.querySelector("#surnameForm").value;
   var email = document.querySelector("#emailForm").value;
   var message = document.querySelector("#messageForm").value;
+  var phone = document.querySelector("#phoneForm").value;
 
-  saveMessages(name, surname, email, message);
+  saveMessages(name, surname, email, message, phone);
   document.querySelector(".alert").style.visibility = "visible";
   document.querySelector(".alert").style.opacity = "90%";
 
@@ -33,7 +34,7 @@ function submitForm(e) {
   document.getElementById("portfolioMain").reset();
 }
 
-const saveMessages = (name, surname, email, message) => {
+const saveMessages = (name, surname, email, message, phone) => {
   var newContactForm = portfolioDB.push();
 
   newContactForm.set({
@@ -41,6 +42,7 @@ const saveMessages = (name, surname, email, message) => {
     surname: surname,
     message: message,
     email: email,
+    phone: phone,
   });
 };
 
