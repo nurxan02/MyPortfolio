@@ -3,9 +3,7 @@
   document.addEventListener("contextmenu", (e) => {
     e.preventDefault();
   });
-  document.addEventListener("copy", (e) => {
-    e.preventDefault();
-  });
+
   var position = $(window).scrollTop();
 
   stopAnimateOnScroll();
@@ -563,10 +561,10 @@
     $(".en").click(function () {
       $("#name").text("NAME");
       $("#nameBig").text("Nurkhan");
-      $("#surnameBig").text("Masimzade");
+      $("#surnameBig").text("Masimzada");
       $("#sentMessage").text("Your message successfully sent!");
 
-      $("#nameVal").text("Nurkhan Masimzade");
+      $("#nameVal").text("Nurkhan Masimzada");
       $("#profession").text("ROLE");
       $("#professionVal").text("Web and App Developer");
       $("#phonee").text("PHONE");
