@@ -88,6 +88,27 @@
         <a href="https://nurkhanmasimzada.site" class="social-link"
           ><i class="fa-solid fa-briefcase"></i
         ></a>
+        <a href="#" class="social-link"
+          ><i class="fa-solid fas fa-qrcode"></i
+        ></a>
+        <!-- Popup backdrop and popup -->
+        <div id="qr-backdrop" class="qr-backdrop"></div>
+        <div id="qr-popup" class="qr-popup">
+          <button class="qr-close" id="qr-close">&times;</button>
+          <div class="qr-popup-content">
+            <div class="qr-popup-title">Share with QR code!</div>
+            <img src="/images/ssss.png" alt="QR Code" class="qr-image" />
+            <div class="qr-popup-decs">
+              You can scan this QR code for sharing my link page. Thanks!
+            </div>
+            <div class="qr-popup-link">
+              <a href="#">
+                <i class="far fa-copy"></i> nurkhanmasimzada.site/social</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- end backdrop -->
       </div>
       <a href="https://www.linkedin.com/in/nurxanmasimzade" class="link-button"
         ><i class="fa-brands fa-linkedin"></i> Linkedin</a
@@ -117,6 +138,18 @@
 
     <script>
       document
+        .querySelector(".qr-popup-link")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+          navigator.clipboard.writeText(window.location.href);
+          const popup = document.getElementById("copy-popup");
+          popup.classList.add("show");
+
+          setTimeout(() => {
+            popup.classList.remove("show");
+          }, 2000);
+        });
+      document
         .querySelector(".share-btn")
         .addEventListener("click", function (e) {
           e.preventDefault();
@@ -129,6 +162,36 @@
           setTimeout(() => {
             popup.classList.remove("show");
           }, 2000);
+        });
+
+      document.querySelectorAll(".fa-qrcode").forEach(function (icon) {
+        icon.parentElement.addEventListener("click", function (e) {
+          e.preventDefault();
+          const popup = document.getElementById("qr-popup");
+          const backdrop = document.getElementById("qr-backdrop");
+          popup.classList.add("show");
+          backdrop.classList.add("show");
+          popup.classList.remove("hide");
+        });
+      });
+
+      document
+        .getElementById("qr-close")
+        .addEventListener("click", function () {
+          const popup = document.getElementById("qr-popup");
+          const backdrop = document.getElementById("qr-backdrop");
+          popup.classList.add("hide");
+          backdrop.classList.remove("show");
+          setTimeout(() => {
+            popup.classList.remove("show");
+            popup.classList.remove("hide");
+          }, 250);
+        });
+
+      document
+        .getElementById("qr-backdrop")
+        .addEventListener("click", function () {
+          document.getElementById("qr-close").click();
         });
     </script>
   </body>

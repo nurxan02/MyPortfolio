@@ -83,15 +83,15 @@ body {
 }
 .share-btn {
   left: 20px;
-  padding: 13px 16px; /* Sadece burada tanımla */
+  padding: 13px 16px;
   min-width: 44px;
   transition: all 0.3s cubic-bezier(0.4, 2, 0.6, 1);
 }
 
 .share-btn:hover {
-  padding-left: 44px; /* Soldan da artır */
-  padding-right: 44px; /* Sağdan da artır */
-  min-width: 170px; /* Genişliği daha belirgin artır */
+  padding-left: 44px;
+  padding-right: 44px;
+  min-width: 170px;
 }
 
 .subscribe-btn {
@@ -324,6 +324,120 @@ body {
   }
 }
 
+/* Backdrop */
+.qr-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(82, 81, 80, 0.35);
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s;
+}
+
+.qr-backdrop.show {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+/* Popup */
+.qr-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 320px;
+  max-width: 90vw;
+  padding: 32px 24px 24px 24px;
+  background: rgba(121, 107, 62, 0.7);
+  border: 1.5px solid rgba(255, 255, 255, 0.18);
+  border-radius: 10px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  z-index: 1001;
+  transform: translate(-50%, -50%) scale(0.95);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.qr-popup.show {
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+  pointer-events: auto;
+}
+
+.qr-popup.hide {
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.95);
+  pointer-events: none;
+  transition: opacity 0.25s, transform 0.25s;
+}
+
+/* Close button */
+.qr-close {
+  position: absolute;
+  top: 10px;
+  right: 14px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  color: #fff;
+  font-size: 22px;
+  cursor: pointer;
+  transition: background 0.2s;
+  z-index: 2;
+}
+.qr-close:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Popup içeriği */
+.qr-popup-content {
+  text-align: center;
+  margin-top: 18px;
+  perspective: 600px;
+}
+.qr-popup-title {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 18px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.qr-popup-decs {
+  font-size: 12px;
+  font-weight: lighter;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+.qr-popup-link,
+.qr-popup-link a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+.qr-popup-link:hover a {
+  color: #fff;
+  text-decoration: underline;
+}
+.qr-image {
+  width: 170px;
+  height: 170px;
+  border-radius: 8px;
+  background: #fff;
+  padding: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 3s cubic-bezier(0.4, 2, 0.6, 1);
+}
+.qr-image:hover {
+  transform: rotateY(360deg);
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
 @media (max-width: 480px) {
   .container {
     padding: 20px 15px;
