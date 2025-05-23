@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nurkhan Masimzada - Link in Bio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="social.css" />
+  </head>
+  <body>
+    <a href="#" class="share-btn"
+      ><i class="fa-solid fa-arrow-up-from-bracket"></i>
+      <span class="share-text"> Copy the link</span></a
+    >
+    <div id="copy-popup" class="copy-popup">
+      <span class="copy-popup-text"
+        ><i class="far fa-copy"></i> Link Copied!
+      </span>
+    </div>
+
+    <div class="container">
+      <div class="header">
+        <div class="profile-img">
+          <img src="./images/IMG_4304.jpg" alt="Profile" />
+        </div>
+        <h1 class="name">Nurkhan Masimzada</h1>
+        <p class="subtitle">Software Developer / Data Engineer</p>
+      </div>
+
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fa-solid fa-phone"></i></a>
+        <a href="#" class="social-link"><i class="fa-solid fa-envelope"></i></a>
+        <a href="#" class="social-link"
+          ><i class="fa-solid fa-briefcase"></i
+        ></a>
+      </div>
+      <a href="https://www.linkedin.com/in/nurxanmasimzade" class="link-button"
+        ><i class="fa-brands fa-linkedin"></i> Linkedin</a
+      >
+      <a href="https://github.com/nurxan02" class="link-button"
+        ><i class="fa-brands fa-github"></i> Github</a
+      >
+      <a href="https://medium.com/@nurxan02" class="link-button"
+        ><i class="fa-brands fa-medium"></i> Medium Articles</a
+      >
+      <a href="https://m.youtube.com/@masimzada" class="link-button"
+        ><i class="fa-brands fa-youtube"></i> Youtube channel</a
+      >
+      <a href="https://wa.me/994515912560" class="link-button"
+        ><i class="fa-brands fa-whatsapp"></i> Whatsapp</a
+      >
+      <a href="https://instagram.com/nmasimzada" class="link-button"
+        ><i class="fa-brands fa-instagram"></i> Instagram</a
+      >
+      <a href="https://buymeacoffee.com/nurxan02" class="link-button"
+        ><i class="fa-solid fa-mug-hot"></i> Buy me a coffee</a
+      >
+    </div>
+    <div class="section-title">
+      © All Rights Reserved. <span>Nurkhan Masimzada</span>
+    </div>
+
+    <script>
+      document
+        .querySelector(".share-btn")
+        .addEventListener("click", function (e) {
+          e.preventDefault();
+
+          navigator.clipboard.writeText(window.location.href);
+
+          const popup = document.getElementById("copy-popup");
+          popup.classList.add("show");
+
+          setTimeout(() => {
+            popup.classList.remove("show");
+          }, 2000);
+        });
+    </script>
+  </body>
+</html>
