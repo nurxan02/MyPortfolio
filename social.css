@@ -131,7 +131,15 @@ body {
   z-index: 0;
   animation: rotate-border 9s linear infinite, pulse 4s ease-in-out infinite;
 }
-
+.logo {
+  height: 40px !important;
+  background-color: #eee3cd !important;
+  width: auto !important;
+  position: absolute;
+  top: -40px;
+  right: -60px;
+  animation: rotate-border 9s linear infinite, pulse 4s ease-in-out infinite;
+}
 @keyframes rotate-border {
   100% {
     transform: rotate(360deg);
@@ -440,6 +448,7 @@ body {
   transform: rotateY(360deg);
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
 }
+
 @media (max-width: 480px) {
   .container {
     padding: 20px 15px;
